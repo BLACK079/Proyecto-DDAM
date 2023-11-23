@@ -31,4 +31,6 @@ import {
   IonCol,
   IonImg,
 } from '@ionic/vue';
+
+import { usePhotoGallery } from '@/composables/usePhotoGallery';
 </script>
