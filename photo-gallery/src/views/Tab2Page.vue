@@ -13,6 +13,7 @@
   </ion-fab>
 </ion-content>
   </ion-page>
+
 </template>
 
 <script setup lang="ts">
@@ -31,6 +32,6 @@ import {
   IonCol,
   IonImg,
 } from '@ionic/vue';
-
-import { usePhotoGallery } from '@/composables/usePhotoGallery';
+import { usePhotoGallery, UserPhoto } from '@/composables/usePhotoGallery';
+const { photos, takePhoto } = usePhotoGallery();
 </script>
