@@ -1,4 +1,6 @@
 import { CapacitorConfig } from '@capacitor/cli';
+import { isPlatform } from '@ionic/vue';
+import { Capacitor } from '@capacitor/core';
 
 
 
