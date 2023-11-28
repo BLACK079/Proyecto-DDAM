@@ -12,12 +12,22 @@
     </ion-fab-button>
   </ion-fab>
 </ion-content>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" :key="photo.filepath" v-for="photo in photos">
+        <ion-img :src="photo.webviewPath"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- <ion-fab> markup  -->
+</ion-content>
   </ion-page>
 
 </template>
 
 <script setup lang="ts">
-import { camera, trash, close } from 'ionicons/icons';
 import {
   IonPage,
   IonHeader,
@@ -32,6 +42,8 @@ import {
   IonCol,
   IonImg,
 } from '@ionic/vue';
+import {camera, trash, close } from 'ionicons/icons';
 import { usePhotoGallery, UserPhoto } from '@/composables/usePhotoGallery';
-const { photos, takePhoto } = usePhotoGallery();
+const {photos, takePhoto } = usePhotoGallery();
+
 </script>

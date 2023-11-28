@@ -1,5 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
+
+
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'photo-gallery',
@@ -10,3 +12,4 @@ const config: CapacitorConfig = {
 };
 
 export default config;
+
