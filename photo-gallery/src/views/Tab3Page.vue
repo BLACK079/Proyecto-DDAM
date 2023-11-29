@@ -12,7 +12,7 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Tab 3 page" />
+      <ExploreContainer name="Ingese una foto o tomese una foto" />
     </ion-content>
   </ion-page>
 </template>
